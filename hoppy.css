@@ -19,4 +19,25 @@
   to { top: -150px; opacity: 0; }
 }
 
+.hopper-jumping {
+    -webkit-animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.hopper-jumping-text {
+  position: relative;
+  font-size: 250%;
+  animation: moving 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moving {
+  from { top: -30px; opacity: 1; }
+  to { top: -180px; opacity: 0; }
+}
+
 /*to do add webkit animations for backwards compability and such*/
