@@ -2,6 +2,8 @@
 
 console.log("hey");
 
+const TICK_RATE = 1000; // 1 second
+
 const getRandomElement = () => {
 	arr = Array.from(document.body.getElementsByTagName("*"))
 	.filter((e) => { return typeof e.className === 'string' && !e.className.includes("ohnoes") });
@@ -25,6 +27,6 @@ const spawnBeaver = () => {
 
 tick = setInterval(() => {
 	spawnBeaver();
-}, 500);
+}, 1000);
 
 })();
