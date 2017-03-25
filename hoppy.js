@@ -2,7 +2,7 @@
 
 console.log("hey");
 
-const TICK_RATE = 500; // 1s
+const TICK_RATE = 1000; // 1s
 
 const getRandomElement = () => {
 	arr = Array.from(document.body.getElementsByTagName("*"))
