@@ -2,7 +2,7 @@
 
 console.log("hey");
 
-const TICK_RATE = 1000; // 1s
+const TICK_RATE = 500; // 1s
 
 const getRandomElement = () => {
 	arr = Array.from(document.body.getElementsByTagName("*"))
@@ -12,10 +12,13 @@ const getRandomElement = () => {
 }
 
 const spawnBeaver = () => {
+	// create image element that fades in
 	let img = document.createElement('img');
 	img.src = chrome.extension.getURL("images/OhNoes.png");
 	img.style.zIndex = "1";
 	img.className = "ohnoes-errorbuddy";
+
+	// create text element that pops up
 	let text = document.createElement('div')
 	text.style.zIndex = "1";	
 	text.innerHTML = (Math.floor(Math.random() * 2) + 1) == 1 ? "Oh Noes! It looks like you're missing a semicolon" : "Oh Noes!"
@@ -30,3 +33,5 @@ tick = setInterval(() => {
 }, TICK_RATE);
 
 })();
+
+// to do... add beaver thing? restore page? idk
