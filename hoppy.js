@@ -2,7 +2,7 @@
 
 console.log("hey");
 
-const TICK_RATE = 1000; // 1 second
+const TICK_RATE = 1000; // 1s
 
 const getRandomElement = () => {
 	arr = Array.from(document.body.getElementsByTagName("*"))
@@ -27,6 +27,6 @@ const spawnBeaver = () => {
 
 tick = setInterval(() => {
 	spawnBeaver();
-}, 1000);
+}, TICK_RATE);
 
 })();
