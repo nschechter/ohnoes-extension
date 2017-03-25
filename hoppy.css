@@ -1,0 +1,22 @@
+.ohnoes-errorbuddy {
+    -webkit-animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.ohnoes-text {
+  position: relative;
+  font-size: 200%;
+  animation: moving 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moving {
+  from { top: -30px; opacity: 1; }
+  to { top: -150px; opacity: 0; }
+}
+
+/*to do add webkit animations for backwards compability and such*/
